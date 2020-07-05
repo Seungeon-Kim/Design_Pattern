@@ -12,7 +12,6 @@ public class SingletonLazyHolder {
         System.out.print("Singleton Print");
     }
 
-
     private static class LazyHolder{
         private static final SingletonLazyHolder INSTANCE = new SingletonLazyHolder();
     }
