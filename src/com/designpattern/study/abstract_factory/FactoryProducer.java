@@ -5,7 +5,7 @@ import com.designpattern.study.abstract_factory.factories.WindowsPlatformFactory
 import com.designpattern.study.abstract_factory.interfaces.IAbstractFactory;
 import com.designpattern.study.etc.Constants;
 
-public final class ConfigurationProducer {
+public final class FactoryProducer {
     public static IAbstractFactory getFactory(String os){
         switch(os)
         {

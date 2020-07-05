@@ -1,6 +1,7 @@
 package com.designpattern.test.first_section;
 
-import com.designpattern.study.abstract_factory.ConfigurationProducer;
+import com.designpattern.study.abstract_factory.FactoryProducer;
+import com.designpattern.study.abstract_factory.interfaces.IAbstractFactory;
 import com.designpattern.study.abstract_factory.interfaces.IProduct;
 import com.designpattern.study.etc.Constants;
 import com.designpattern.study.singleton.SingletonLazy;
@@ -22,8 +23,8 @@ public class MacActivity {
         String os = config.getOs();
         String platform = config.getTargetPlatform();
 
-        IProduct product = ConfigurationProducer.getFactory(os).getInstance(platform);
-
+        IAbstractFactory factory =  FactoryProducer.getFactory(os);
+        IProduct product = factory.getInstance(platform);
         product.print();
     }
 }
