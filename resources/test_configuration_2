@@ -1,6 +1,6 @@
 {
-  "File Name": "Test Configuration File_2",
-  "OS": "Mac",
-  "Target Platform": "Ios",
-  "Version": "v1.2"
+  "fileName": "Test Configuration File_2",
+  "os": "Mac",
+  "targetPlatform": "Ios",
+  "version": "v1.2"
 }

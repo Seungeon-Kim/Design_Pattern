@@ -1,4 +1,4 @@
-package com.designpattern.study.abstract_factory.messages;
+package com.designpattern.study.abstract_factory.products;
 
 import com.designpattern.study.abstract_factory.interfaces.IProduct;
 
@@ -12,6 +12,6 @@ public class WindowsPProduct implements IProduct {
 
     @Override
     public void print() {
-        System.out.print("Product name is Windows");
+        System.out.println("Product name is Windows");
     }
 }

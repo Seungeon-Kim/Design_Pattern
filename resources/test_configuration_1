@@ -1,6 +1,6 @@
 {
-  "File Name": "Test Configuration File_1",
-  "OS": "Windows",
-  "Target Platform": "Windows",
-  "Version": "v1.1"
+  "fileName": "Test Configuration File_1",
+  "os": "Windows",
+  "targetPlatform": "Windows",
+  "version": "v1.1"
 }

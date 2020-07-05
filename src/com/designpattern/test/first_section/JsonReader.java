@@ -1,35 +1,29 @@
 package com.designpattern.test.first_section;
 
-import java.io.FileNotFoundException;
+import com.designpattern.study.etc.Constants;
+import com.designpattern.study.singleton.SingletonLazy;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+
 import java.io.FileReader;
-import java.io.IOException;
-import java.text.ParseException;
-import java.util.Iterator;
 
 public class JsonReader {
-//    JSONParser parser = new JSONParser();
-//	try {
-//        Object obj = parser.parse(new FileReader("C:\\Users\\KSU\\Desktop\\Design_Pattern\\resources\\test_configuration_1"));
-//        JSONObject jsonObject = (JSONObject) obj;
-//
-//        String name = (String) jsonObject.get("name");
-//        System.out.println(name);
-//
-//        long age = (Long) jsonObject.get("age");
-//        System.out.println(age);
-//
-//        // loop array
-//        JSONArray msg = (JSONArray) jsonObject.get("messages");
-//        Iterator<String> iterator = msg.iterator();
-//        while (iterator.hasNext()) {
-//            System.out.println(iterator.next());
-//        }
-//
-//    } catch (FileNotFoundException e) {
-//        e.printStackTrace();
-//    } catch (IOException e) {
-//        e.printStackTrace();
-//    } catch (ParseException e) {
-//        e.printStackTrace();
-//    }
+    public void read(String path) {
+        JSONParser parser = new JSONParser();
+        try {
+            Object obj = parser.parse(new FileReader(path));
+            JSONObject jsonObject = (JSONObject) obj;
+
+            String fileName = (String) jsonObject.get("fileName");
+            String os = (String) jsonObject.get("os");
+            String targetName = (String) jsonObject.get("targetPlatform");
+            String version = (String) jsonObject.get("version");
+
+            ConfigVO config = new ConfigVO(fileName, os, targetName, version);
+
+            SingletonLazy.getInstance().add(Constants.Keys.KEY_CONFIGURATION, config);
+        }catch (Exception e){
+
+        }
+    }
 }

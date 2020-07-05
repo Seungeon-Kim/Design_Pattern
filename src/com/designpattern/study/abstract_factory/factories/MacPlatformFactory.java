@@ -2,15 +2,16 @@ package com.designpattern.study.abstract_factory.factories;
 
 import com.designpattern.study.abstract_factory.interfaces.IAbstractFactory;
 import com.designpattern.study.abstract_factory.interfaces.IProduct;
-import com.designpattern.study.abstract_factory.messages.IosProduct;
-import com.designpattern.study.abstract_factory.messages.MacProduct;
+import com.designpattern.study.abstract_factory.products.IosProduct;
+import com.designpattern.study.abstract_factory.products.MacProduct;
+import com.designpattern.study.etc.Constants;
 
 public class MacPlatformFactory implements IAbstractFactory {
     @Override
     public IProduct getInstance(String parserType) {
         switch(parserType){
-            case "Mac": return new MacProduct();
-            case "Ios": return new IosProduct();
+            case Constants.Platforms.PLATFORM_MAC: return new MacProduct();
+            case Constants.Platforms.PLATFORM_IOS: return new IosProduct();
         }
         return null;
     }
