@@ -8,7 +8,7 @@ import com.designpattern.study.singleton.SingletonLazy;
 public class MacActivity {
     public MacActivity(){
         System.out.println("==============================================");
-        System.out.println("Start Activity :: Windows Activity Class");
+        System.out.println("Start Activity :: Mac Activity Class");
         init();
     }
 
