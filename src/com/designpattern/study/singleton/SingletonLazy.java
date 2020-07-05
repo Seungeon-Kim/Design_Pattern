@@ -12,6 +12,6 @@ public class SingletonLazy {
     }
 
     public void print(){
-        System.out.print("Singleton Print");
+        System.out.println("Singleton Print");
     }
 }
