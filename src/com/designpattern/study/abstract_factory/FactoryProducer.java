@@ -6,7 +6,14 @@ import com.designpattern.study.abstract_factory.interfaces.IAbstractFactory;
 import com.designpattern.study.etc.Constants;
 
 public final class FactoryProducer {
-    public static IAbstractFactory getFactory(String os){
+    private static  FactoryProducer instance = null;
+
+    public static FactoryProducer getInstance(){
+        if (null == instance) instance = new FactoryProducer();
+        return instance;
+    }
+
+    public IAbstractFactory getFactory(String os){
         switch(os)
         {
             case Constants.Opers.OP_WINDOWS: return new WindowsPlatformFactory();

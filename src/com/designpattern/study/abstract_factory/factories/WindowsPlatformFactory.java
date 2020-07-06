@@ -8,8 +8,8 @@ import com.designpattern.study.etc.Constants;
 
 public class WindowsPlatformFactory implements IAbstractFactory {
     @Override
-    public IProduct getInstance(String parserType) {
-        switch(parserType){
+    public IProduct getProduct(String platform) {
+        switch(platform){
             case Constants.Platforms.PLATFORM_WINDOWS: return new WindowsPProduct();
             case Constants.Platforms.PLATFORM_ANDROID: return new AndroidProduct();
         }

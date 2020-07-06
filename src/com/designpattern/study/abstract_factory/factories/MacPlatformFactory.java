@@ -8,8 +8,8 @@ import com.designpattern.study.etc.Constants;
 
 public class MacPlatformFactory implements IAbstractFactory {
     @Override
-    public IProduct getInstance(String parserType) {
-        switch(parserType){
+    public IProduct getProduct(String platform) {
+        switch(platform){
             case Constants.Platforms.PLATFORM_MAC: return new MacProduct();
             case Constants.Platforms.PLATFORM_IOS: return new IosProduct();
         }
