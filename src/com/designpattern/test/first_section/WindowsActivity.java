@@ -14,17 +14,15 @@ public class WindowsActivity {
     }
     public void init(){
         JsonReader reader = new JsonReader();
-        reader.read("\\Users\\KSU\\Desktop\\Design_Pattern\\resources\\test_configuration_1");
+        reader.read("/Users/seungeonkim/Desktop/DesignPattern/Design_Pattern/resources/test_configuration_1");
 
         ConfigVO config = (ConfigVO) SingletonLazy.getInstance().get(Constants.Keys.KEY_CONFIGURATION);
         SingletonLazy.getInstance().print(Constants.Keys.KEY_CONFIGURATION);
-
         String os = config.getOs();
         String platform = config.getTargetPlatform();
 
-
-        IAbstractFactory factory =  FactoryProducer.getFactory(os);
-        IProduct product = factory.getInstance(platform);
+        IAbstractFactory factory =  FactoryProducer.getInstance().getFactory(os);
+        IProduct product = factory.getProduct(platform);
         product.print();
     }
 }
