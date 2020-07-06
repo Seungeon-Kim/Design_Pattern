@@ -4,6 +4,10 @@
 ## 참여자 :
 
 ## <<1주차>>. 
-패턴 : Signelton Pattern / Abstract Factory Pattern. 
-발표 : ㄱ
-일시 : 20. 07. 07.
+패턴 : Signelton Pattern / Abstract Factory Pattern
+
+발표자 :
+
+일시 : 20. 07.07
+
+
