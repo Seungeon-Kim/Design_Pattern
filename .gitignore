@@ -1,0 +1,12 @@
+
+*.xml
+.idea/misc.xml
+out/production/Design_Pattern/com/designpattern/study/abstract_factory/factories/MacPlatformFactory.class
+out/production/Design_Pattern/com/designpattern/study/abstract_factory/factories/WindowsPlatformFactory.class
+out/production/Design_Pattern/com/designpattern/study/abstract_factory/FactoryProducer.class
+out/production/Design_Pattern/com/designpattern/study/abstract_factory/interfaces/IAbstractFactory.class
+out/production/Design_Pattern/com/designpattern/study/abstract_factory/factories/MacPlatformFactory.class
+out/production/Design_Pattern/com/designpattern/study/abstract_factory/factories/MacPlatformFactory.class
+out/production/Design_Pattern/com/designpattern/study/abstract_factory/factories/MacPlatformFactory.class
+out/production/Design_Pattern/com/designpattern/study/abstract_factory/interfaces/IAbstractFactory.class
+out/production/Design_Pattern/com/designpattern/study/abstract_factory/factories/WindowsPlatformFactory.class
