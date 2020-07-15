@@ -3,6 +3,12 @@
 
 ## 참여자 :
 
+
+## 발표자료 
+
+https://github.com/Seungeon-Kim/Design_Pattern/tree/master/asset/ppt
+
+
 ## <<1주차>>
 
 
