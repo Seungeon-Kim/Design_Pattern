@@ -1,7 +1,7 @@
 # Design_Pattern
 ## DesignPattern Study
 
-## 참여자 :
+## 참여자 : 김승언, 엄태근, 정종인, 이수진
 
 
 ## 발표자료 
