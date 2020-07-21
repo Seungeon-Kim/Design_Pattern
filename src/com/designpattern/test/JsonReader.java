@@ -1,4 +1,4 @@
-package com.designpattern.test.first_section;
+package com.designpattern.test;
 
 import com.designpattern.study.etc.Constants;
 import com.designpattern.study.singleton.SingletonLazy;

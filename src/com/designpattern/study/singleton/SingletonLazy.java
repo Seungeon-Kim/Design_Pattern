@@ -1,6 +1,6 @@
 package com.designpattern.study.singleton;
 
-import com.designpattern.test.first_section.ConfigVO;
+import com.designpattern.test.ConfigVO;
 import com.designpattern.study.etc.Constants;
 
 import java.util.Hashtable;

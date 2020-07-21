@@ -1,4 +1,4 @@
-package com.designpattern.test.first_section;
+package com.designpattern.test;
 
 import java.io.Serializable;
 
